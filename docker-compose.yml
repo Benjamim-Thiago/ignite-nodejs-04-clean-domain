@@ -1,0 +1,26 @@
+version: '3'
+services:
+  nodeapp:
+#    image: benjamimthiago/my-node-20:0.0.1-release
+    image: node:18
+    container_name: nodeapp
+    working_dir: /app
+    volumes:
+      - ./:/app
+    ports:
+      - "3000:3000"
+      - "51204:8888"
+      - "5555:5555"
+    tty: true
+    command: bash
+
+  # postgres:
+  #   image: postgres:13
+  #   container_name: postgres
+  #   environment:
+  #     POSTGRES_DB: apisolid
+  #     POSTGRES_USER: docker
+  #     POSTGRES_PASSWORD: docker
+  #   ports:
+  #     - "5432:5432"
+
