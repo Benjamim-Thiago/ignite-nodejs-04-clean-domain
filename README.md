@@ -11,5 +11,5 @@
   - Execute o seguinte comandos:
     - npm install
 # Comandos de uso
-- ## Valida erro de typescript
+- ## Validar erro de typescript
   - npx tsc --noEmit 
