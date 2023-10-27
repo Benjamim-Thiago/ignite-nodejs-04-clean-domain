@@ -10,3 +10,6 @@
   - Execute o comando docker exec -it nodeapp bash
   - Execute o seguinte comandos:
     - npm install
+# Comandos de uso
+- ## Valida erro de typescript
+  - npx tsc --noEmit 
