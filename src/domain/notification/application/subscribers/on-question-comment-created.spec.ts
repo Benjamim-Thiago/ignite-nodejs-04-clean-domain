@@ -4,13 +4,13 @@ import { makeQuestionComment } from 'test/factories/make-question-comment'
 
 let inMemoryQuestionCommentsRepository: InMemoryQuestionCommentsRepository
 
-describe('On Answer Created', () => {
+describe('On Question comment Created', () => {
   beforeEach(() => {
     inMemoryQuestionCommentsRepository =
       new InMemoryQuestionCommentsRepository()
   })
 
-  it('should  send a notification when an answer is created', async () => {
+  it('should  send a notification when an question comment is created', async () => {
     // eslint-disable-next-line @typescript-eslint/no-unused-vars
     new OnQuestionCommentCreated()
 
